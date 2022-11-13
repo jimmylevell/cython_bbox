@@ -32,7 +32,7 @@ with open("README.md", "r") as fh:
 if os.name == 'nt':
     compile_args = {'gcc': ['/Qstd=c99']}
 else:
-    compile_args = ['-Wno-cpp']
+    compile_args = []
 
 ext_modules = [
     Extension(
@@ -54,7 +54,7 @@ setup(
     long_description_content_type="text/markdown",
     author = 'Samson Wang',
     author_email = 'samson.c.wang@gmail.com',
-    url = 'https://github.com/samson-wang/cython_bbox.git', 
+    url = 'https://github.com/samson-wang/cython_bbox.git',
     keywords = ['cython_bbox']
 )
 
